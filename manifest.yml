@@ -3,6 +3,6 @@ applications:
 - name: cf-xsp-demo
   memory: 64M
   instances: 2
-  host: cf-xsp-demo-1
+  host: cf-xsp-demo
   domain: 10.244.0.34.xip.io
   path: .
