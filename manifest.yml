@@ -2,7 +2,16 @@
 applications:
 - name: cf-xsp-demo
   memory: 64M
-  instances: 2
+  instances: 1
+  timeout: 60
   host: cf-xsp-demo
   domain: 10.244.0.34.xip.io
   path: .
+  #command: ss -x #{$x} -y #{y}
+  #no-route: true
+  env:
+    XSP_ENV1: 12345ABCDE
+    XSP_ENV2: ABCDE12345
+  #services:
+  #- db-service-1
+  #- iot-service-1
